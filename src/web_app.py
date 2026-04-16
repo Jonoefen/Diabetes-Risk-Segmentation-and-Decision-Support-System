@@ -267,12 +267,24 @@ def _insight_card_children():
             ],
             className="artifact-grid",
         ),
-        dcc.Graph(id="shap-graph", figure=_shap_bar_figure(), config={"displayModeBar": True}),
+        dcc.Graph(
+            id="shap-graph",
+            figure=_shap_bar_figure(),
+            config={
+                "displayModeBar": False,
+            },
+        ),
     ]
     confusion_fig = _confusion_figure_from_predictions()
     if confusion_fig is not None:
         children.append(
-            dcc.Graph(id="confusion-graph", figure=confusion_fig, config={"displayModeBar": True})
+            dcc.Graph(
+                id="confusion-graph",
+                figure=confusion_fig,
+                config={
+                    "displayModeBar": False,
+                },
+            )
         )
     return children
 
@@ -411,4 +423,5 @@ if __name__ == "__main__":
     # Flask's debug reloader exits the parent with code 3; debugpy/VS Code then
     # reports a false failure. Set DASH_USE_RELOADER=1 if you want auto-reload.
     use_reloader = os.environ.get("DASH_USE_RELOADER", "").lower() in ("1", "true", "yes")
-    app.run(debug=True, use_reloader=use_reloader)
+    app.run(debug=False, use_reloader=use_reloader)
+    server = app.server
