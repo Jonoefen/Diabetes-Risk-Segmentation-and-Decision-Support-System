@@ -57,10 +57,11 @@ def train_and_export_model():
     print(f"Accuracy: {accuracy_score(y_test, y_pred):.4f}")
     
     # Added zero_division=0 to keep console output clean
+    # Added .astype(str) to prevent LabelEncoder type errors
     print(classification_report(
         y_test, 
         y_pred, 
-        target_names=label_encoder.classes_, 
+        target_names=label_encoder.classes_.astype(str), 
         zero_division=0
     ))
 
