@@ -1,0 +1,7 @@
+dash
+joblib
+pandas
+plotly
+scikit-learn
+gunicorn
+xgboost
