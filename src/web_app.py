@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 
+import dash
 import joblib
 import pandas as pd
 import plotly.graph_objects as go
@@ -424,4 +425,5 @@ if __name__ == "__main__":
     # reports a false failure. Set DASH_USE_RELOADER=1 if you want auto-reload.
     use_reloader = os.environ.get("DASH_USE_RELOADER", "").lower() in ("1", "true", "yes")
     app.run(debug=False, use_reloader=use_reloader)
+    app = dash.Dash(__name__)
     server = app.server
