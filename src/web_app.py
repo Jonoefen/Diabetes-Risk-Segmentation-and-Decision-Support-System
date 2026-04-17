@@ -124,7 +124,7 @@ def _shap_bar_figure(top_n=15):
         )
     )
     fig.update_layout(
-        title="Top features — mean |SHAP| (XGBoost)",
+        title="Top features - mean |SHAP| (XGBoost)",
         height=max(320, top_n * 28),
         **_PLOTLY_LAYOUT,
     )
@@ -150,7 +150,7 @@ def _confusion_figure_from_predictions():
         )
     )
     fig.update_layout(
-        title="Hold-out predictions — actual vs predicted (from artifacts)",
+        title="Hold-out predictions - actual vs predicted (from artifacts)",
         height=420,
         **_PLOTLY_LAYOUT,
     )
@@ -174,7 +174,7 @@ def _segment_center_figure(segment_id, top_n=10):
         )
     )
     fig.update_layout(
-        title=f"Segment {segment_id} — strongest cluster center values (standardized)",
+        title=f"Segment {segment_id} - strongest cluster center values (standardized)",
         height=max(300, top_n * 32),
         **_PLOTLY_LAYOUT,
     )
