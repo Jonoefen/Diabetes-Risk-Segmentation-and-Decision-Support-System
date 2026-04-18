@@ -8,8 +8,8 @@ A machine learning-powered clinical decision support system that combines **XGBo
 
 This system addresses two critical clinical challenges:
 
-1. **Diabetes Risk Classification** — Predicts a patient's diabetes stage across five categories (No Diabetes, Low Risk, Prediabetes, Type 1 Diabetes, Type 2 Diabetes) using clinical biomarkers and demographic data.
-2. **Lifestyle Segmentation** — Groups patients into three distinct lifestyle profiles to tailor intervention strategies for physical activity, diet quality, and cardiovascular monitoring.
+1. **Diabetes Risk Classification** - Predicts a patient's diabetes stage across five categories (No Diabetes, Low Risk, Prediabetes, Type 1 Diabetes, Type 2 Diabetes) using clinical biomarkers and demographic data.
+2. **Lifestyle Segmentation** - Groups patients into three distinct lifestyle profiles to tailor intervention strategies for physical activity, diet quality, and cardiovascular monitoring.
 
 **Key Capabilities:**
 - Multi-class diabetes stage prediction with SHAP-based explainability
@@ -76,7 +76,7 @@ This system addresses two critical clinical challenges:
 | **History** | Family history, hypertension, cardiovascular disease |
 
 ### Class Distribution (Training Set)
-- **Type 2 Diabetes**: ~60% (majority class — well-controlled patients)
+- **Type 2 Diabetes**: ~60% (majority class - well-controlled patients)
 - **Prediabetes**: ~32% (intervention opportunity)
 - **No Diabetes**: ~8% (preventive/healthy population)
 - **Type 1 Diabetes**: <1% (severely underrepresented)
