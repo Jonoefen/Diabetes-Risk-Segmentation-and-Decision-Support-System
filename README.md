@@ -1,3 +1,8 @@
+# View this project here:
+https://diabetes-risk-segmentation-and-decision.onrender.com/
+
+---
+
 # Diabetes Risk Segmentation & Decision Support System
 
 A machine learning-powered clinical decision support system that combines **XGBoost classification** with **K-means clustering** to stratify diabetes risk and identify personalized intervention opportunities. This project was developed for BC Analytics to deliver evidence-based, actionable insights for patient management.
